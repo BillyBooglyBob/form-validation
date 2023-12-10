@@ -31,6 +31,15 @@ input {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
+input:required:valid {
+    border-color: green;
+  }
+
+input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
 .error {
     width: var(--input-error-width);
     padding: 0;
