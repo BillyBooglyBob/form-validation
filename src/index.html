@@ -5,5 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="postal-info-container">
+      <form id="postal-info-form" novalidate>
+        <div class="input-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <span class="error" id="email-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="country">Country</label>
+          <input type="text" id="country" required minlength="4" maxlength="56">
+          <span class="error" id="country-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="zip-code">Zip Code</label>
+          <input type="text" id="zip-code" required minlength="4" maxlength="9">
+          <span class="error" id="zip-code-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+          <span class="error" id="password-error" aria-live="polite"></span>
+        </div>
+
+        <div class="input-field">
+          <label for="password-confirmation">Confirm Password</label>
+          <input type="password" id="password-confirmation" required>
+          <span class="error" id="password-confirmation-error" aria-live="polite"></span>
+        </div>
+
+        <button class="submit-postal-info">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>

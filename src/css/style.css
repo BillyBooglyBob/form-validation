@@ -1,0 +1,40 @@
+:root {
+    --input-error-width: 200px;
+}
+
+.postal-info-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#postal-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: var(--input-error-width);
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.error {
+    width: var(--input-error-width);
+    padding: 0;
+    background-color: rgb(166, 61, 61);
+    color: white;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
